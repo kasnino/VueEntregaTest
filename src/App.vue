@@ -15,7 +15,7 @@
               <router-link to="/test">4</router-link> |
               <router-link to="/fin">5</router-link> |
             </div>
-            <div class="next" @click="$router.go(1)">
+            <div class="next" @click="$router.go(+1)">
               <i class="fas fa-angle-right"></i>
             </div>
            </div>
