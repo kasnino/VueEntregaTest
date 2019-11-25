@@ -48,7 +48,7 @@ export default {
 
 .contenedor-about{
 width: 100%;
-height: 100%;
+height: 570px;
 grid-template-columns: repeat(2, 50%);
 // background: pink;
 // background: red;
@@ -73,7 +73,7 @@ display: grid;
 
 .descargar{
   widows: 100%;
-  height: 100%;
+  height: 70%;
   // background: yellow;
     display: grid;
   justify-content: center;

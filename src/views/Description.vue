@@ -39,7 +39,7 @@ export default {
 <style lang="scss" scoped>
 .imagen-turo{
    width: 70%;
-    height: 20%;
+    height: 91%;
     display: grid;
     grid-template-columns: 25% 75%;
     -webkit-box-pack: unset;
@@ -51,7 +51,7 @@ export default {
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     /* margin-bottom: 0px; */
-    position: absolute;
+    // position: absolute;
     right: -42px;
     margin-top: 10px;
         animation-duration: 1s;
@@ -84,7 +84,7 @@ export default {
   display: grid;
   grid-template-rows: 25% 75%;
   width: 100%;
-  height: 100%;
+  height: 575px;
  
 }
 
@@ -101,8 +101,6 @@ export default {
 
   width: 100%;
   height: 100%;
-
-  
 }
 
 @keyframes slidein {
@@ -120,7 +118,7 @@ export default {
 @media screen and (max-width: 1024px) {
 .imagen-turo{
    width: 100%;
-    height: 20%;
+    height: 91%;
     display: grid;
    
     -webkit-box-pack: unset;
@@ -132,7 +130,7 @@ export default {
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     /* margin-bottom: 0px; */
-    position: absolute;
+   
     right: -42px;
     margin-top: 10px;
         animation-duration: 1s;

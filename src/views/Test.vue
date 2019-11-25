@@ -32,32 +32,32 @@ export default {
 
 .contenedor {
   height: 900px;
-  widows: 100%;
+  widows: 1098px;
 }
 .imagen-turo{
-      width: 60%;
-    height: 15%;
+      width: 100%;
+    height: 100%;
 
-    display: grid;
-    grid-template-columns: 20% 80%;
+    // display: grid;
+    // grid-template-columns: 20% 80%;
     -webkit-box-pack: unset;
     -ms-flex-pack: end;
     justify-content: space-between;
     -ms-flex-line-pack: center;
     align-content: center;
     background: #731b8b;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
+    // border-top-left-radius: 100px;
+    // border-bottom-left-radius: 100px;
     /* margin-bottom: 0px; */
-    position: absolute;
-    right: -42px;
-    margin-top: 10px;
+    // position: absolute;
+    
+    // margin-top: 10px;
       animation-duration: 1s;
   animation-name: slidein;
 }
    img{
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     margin: 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -67,9 +67,9 @@ export default {
 
 .conten-test{
 display: grid;
-grid-template-rows: 13% 87%;
+grid-template-rows: 20% 87%;
     width: 100%;
-    height: 100%;
+    // height: 100%;
     
    
 }
@@ -77,29 +77,29 @@ grid-template-rows: 13% 87%;
 .centrar-titulo{
   justify-content: center;
   align-items: center;
-  text-align: initial;
+  text-align: center;
   display: grid;
-   font: 600 15px/1 "Poppins", sans-serif;
+   font: 600 12px/1 "Poppins", sans-serif;
    color: white;
-   margin-right: 20px;
+  //  margin-right: 20px;
 }
 
 .caja-form{
   width: 100%;
-  height: 100%;
+  height: 780px;
   
   margin-top: 40px;
 }
 
 @keyframes slidein {
   from {
-    margin-right: -100%;
+    margin-right: 300px;
     
   }
 
   to {
     margin-right: 0%;
-    width: 60%;
+    width: 100%;
   }
 }
 </style>

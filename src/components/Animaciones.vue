@@ -161,7 +161,7 @@ export default {
    display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     
-    width: 100%;
+    width: 94%;
     height: 100%;
    
     grid-gap: 10px;
@@ -233,7 +233,7 @@ from { margin-top: -225px;
    display: grid;
     grid-template-rows: 20% 20% 20% 20% 20%;
      grid-template-columns: repeat(1, 100%);
-    width: 100%;
+    width: 90%;
     height: 100%;
     
    

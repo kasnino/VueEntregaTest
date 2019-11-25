@@ -43,7 +43,7 @@ export default {
 
 .contenedor{
   width: 100%;
-  height: 658px;
+  height: 579px;
   background: #fffefea8;
   display: grid;
   grid-template-columns: repeat(1,100%); 

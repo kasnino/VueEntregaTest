@@ -9,11 +9,11 @@
                    <i class="fas fa-angle-left"></i>
             </div>
              <div id="nav">
-              <router-link to="/">1</router-link> |
-              <router-link to="/about">2</router-link> |
-              <router-link to="/description">3</router-link> |
-              <router-link to="/test">4</router-link> |
-              <router-link to="/fin">5</router-link> |
+              <router-link to="/"> <span class="navegacion">1</span></router-link> |
+              <router-link to="/about"><span class="navegacion">2</span></router-link> |
+              <router-link to="/description"><span class="navegacion">3</span></router-link> |
+              <router-link to="/test"><span class="navegacion">4</span></router-link> |
+              <router-link to="/fin"><span class="navegacion">5</span></router-link> |
             </div>
             <div class="next" @click="$router.go(+1)">
               <i class="fas fa-angle-right"></i>
@@ -23,12 +23,7 @@
              </div>
     </div>
 </template>
-
-
-
 <script>
-
-
 export default {
   name: "app",
   components:{  },
@@ -55,6 +50,23 @@ export default {
 	display: none;
 }
 
+a:link
+{
+text-decoration:none;
+}
+.navegacion {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    /* background: white; */
+    text-align: center;
+    /* padding: 14px; */
+    display: inline-grid;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -67,7 +79,7 @@ export default {
 }
 .contenedor{
   width: 100%;
-  height: 658px;
+  height: 100%;
   background: #fffefea8;
   display: grid;
   grid-template-columns: repeat(1,100%); 

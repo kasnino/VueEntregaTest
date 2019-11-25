@@ -3,7 +3,7 @@
 
         <div class="container">
        
-<div class="parte-uno">
+<div class="parte-dos">
              <div class="checkbox">
             <span class="pregunta">La cultura Virtual es...</span>
             <input 
@@ -27,7 +27,7 @@
             </div>
         
 </div>
-		<div class="grid-columnas">
+		<!-- <div class="grid-columnas"> -->
               <div class="parte-dos">  
 				  <div class="checkbox">
 							<span class="pregunta">La Educacion Virtual Permite...</span>
@@ -52,7 +52,7 @@
                 </div>
         
 
-			   <div class="parte-tres">  
+			   <div class="parte-dos">  
 				  <div class="checkbox">
 						<span class="pregunta">La Educacion Virtual Permite...</span>
 
@@ -75,21 +75,21 @@
 					</div>
                 </div>
         
-		</div>
+		<!-- </div> -->
 
 
         
     </div>
 
-   <!-- <div class="conten">
-            <a class="button" id="login">Ingresar!</a>
+   <div class="conten">
+            <a class="button" id="login">Finalizar Prueba!</a>
             <div class="spinner__wrapper">
                 <div class="spinner-1">
                     <div class="spinner" data-loading="Loading..."></div>
                     <label></label>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
  
 </template>
@@ -115,16 +115,17 @@ export default {
 
 
 <style lang="scss" scoped>
-.contenedor {
-  height: 900px;
-  widows: 100%;
+
+ .contenedor {
+    width: 100%;
+    height: 1098px;
 }
 .checkbox {
 	display: grid;
     -moz-user-select: none;
     -ms-user-select: none;
     width: 100%;
-    grid-template-rows: repeat(3, 14%);
+    // grid-template-rows: repeat(3, 14%);
     grid-template-columns: repeat(1, 100%);
     justify-content: center;
     align-items: center;
@@ -194,7 +195,7 @@ input:checked {
 .checkbox{
   margin: 10px;
   padding: 4px;
-  font-size: 14px;
+//   font-size: 14px;
   
 }
 
@@ -222,20 +223,18 @@ input.button,
 	cursor: pointer;
 	border-radius: 10px;
 	color: white;
-	background: #167ac6;  /* fallback for old browsers */
+	  background: #038287;/* fallback for old browsers */
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
-
-	color: #FFF;
 	position: relative;
 	top: 0;
 	transition: 0.2s ease;
 }
 
 .button:hover{
-		background: #5cb85c;
+		
+	background: #731b8b;
 }
 
 .pregunta {
@@ -261,7 +260,8 @@ input.button,
     box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
 	height: 100%;
     display: grid;
-    grid-template-rows: 45% 55%;
+    grid-template-rows: repeat(3,1fr);
+	grid-template-columns: repeat(1,100%);
     justify-content: center;
     align-items: center;
 }
@@ -284,7 +284,7 @@ input.button,
 
 .grid-columnas {
 	display: grid;
-	grid-template-columns: repeat(2, 50%);
+	grid-template-columns: repeat(1,100%);
 	width: 100%;
 	height: 100%;
 	
