@@ -5,25 +5,24 @@
        
 <div class="parte-dos">
              <div class="checkbox">
-            <span class="pregunta">La cultura Virtual es...</span>
-            <input 
-			@change="evento()"
-			class="checkbox-rem" id="checkbox-rem" type="checkbox" value="1" />
-            <label 
-			for="checkbox-rem">La cultura que esta emergiendo del uso de las TICs para la comunicacion, el entretenimiento y el mercadeo electronico.
-                <span class="box"></span>
-            </label>
-            <input id="checkbox-1" type="checkbox" value="2" />
-            <label for="checkbox-1">La cultura de los elemetos y el chat... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          	<span class="pregunta">La Educacion Virtual Permite...</span>
 
-                <span class="box"></span>
-            </label>
+						<input id="checkbox-rema2" type="checkbox" value="4" />
+						<label for="checkbox-rema2">La cultura que esta emergiendo quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							<span class="box"></span>
+						</label>
 
-            <input id="checkbox-2" type="checkbox" value="3" />
-            <label for="checkbox-2">La cultua de los elemtos y el chat...tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						<input id="checkbox-132" type="checkbox" value="5" />
+						<label for="checkbox-132">La cultua de los elemtos y el chat...Duis aute irure dolor in reprehenderit in voluptate velit esse
 
-                <span class="box"></span>
-            </label>
+							<span class="box"></span>
+							<span class="box"></span>
+						</label>
+
+						<input id="checkbox-212" type="checkbox" value="6" />
+						<label for="checkbox-212">La cultua de los elemtos y el chat...cillum dolore eu fugiat nulla pariatur.
+							<span class="box"></span>
+						</label>
             </div>
         
 </div>
@@ -56,20 +55,20 @@
 				  <div class="checkbox">
 						<span class="pregunta">La Educacion Virtual Permite...</span>
 
-						<input id="checkbox-rema2" type="checkbox" value="4" />
-						<label for="checkbox-rema2">La cultura que esta emergiendo quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						<input id="checkbox-rema22" type="checkbox" value="4" />
+						<label for="checkbox-rema22">La cultura que esta emergiendo quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 							<span class="box"></span>
 						</label>
 
-						<input id="checkbox-132" type="checkbox" value="5" />
-						<label for="checkbox-132">La cultua de los elemtos y el chat...Duis aute irure dolor in reprehenderit in voluptate velit esse
+						<input id="checkbox-1322" type="checkbox" value="5" />
+						<label for="checkbox-1322">La cultua de los elemtos y el chat...Duis aute irure dolor in reprehenderit in voluptate velit esse
 
 							<span class="box"></span>
 							<span class="box"></span>
 						</label>
 
-						<input id="checkbox-212" type="checkbox" value="6" />
-						<label for="checkbox-212">La cultua de los elemtos y el chat...cillum dolore eu fugiat nulla pariatur.
+						<input id="checkbox-2122" type="checkbox" value="6" />
+						<label for="checkbox-2122">La cultua de los elemtos y el chat...cillum dolore eu fugiat nulla pariatur.
 							<span class="box"></span>
 						</label>
 					</div>

@@ -49,14 +49,19 @@
                                 <span>Tu Eres?</span>
                                 <ul class="lista">
 
-                                    <div class="btn-male">
-                                        <a>
-                                            <img class="imagen-genero" src="../assets/img/men.png">
+                                    <div  
+                                    @click="eventohombre()"
+                                    class="btn-male " v-bind:class=" bandera ? 'mover-genero' : 'remover' ">
+                                        <a 
+                                            >
+                                            <img class="imagen-genero-male" src="../assets/img/men.png">
                                         </a>
                                     </div>
-                                    <div class="btn-fame">
+                                    <div 
+                                    @click="eventomujer()"
+                                    class="btn-fame" v-bind:class=" banderamujer ? 'mover-genero-fame' : 'remover' ">
                                         <a>
-                                            <img class="imagen-genero" src="../assets/img/mujer.png">
+                                            <img class="imagen-genero-fame" src="../assets/img/mujer.png">
                                         </a>
                                     </div>
         
@@ -123,11 +128,41 @@ export default {
                 carrera: null,
                 email: null,
                 categorias: [],
-                datos: []
+                datos: [],
+                bandera: false,
+                banderamujer: false
+
           }
       },
 
 methods: {
+
+  eventohombre(){
+    
+    console.log("Click en Hombre");
+     if(!this.bandera){
+      return this.bandera = true
+    }else{
+      return this.bandera = false
+    }
+
+    
+    },
+
+
+  eventomujer(){
+    
+    console.log("Click en Mujer");
+    
+
+    if(!this.banderamujer){
+      return this.banderamujer = true
+    }else{
+      return this.banderamujer = false
+    }
+    
+    },
+
     checkForm(e) {
       console.log("entro al metodo");
       if (this.name && this.age) {
@@ -166,9 +201,6 @@ methods: {
   limpiar(){
       return this.errors = []
   },
-
-  
-
     /*Validando los checkbos, seleccion de carreras en tiempo real */
     onChangeCheckbox(){
       if(this.categorias.length >= 2){
@@ -248,7 +280,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-.imagen-genero {
+.imagen-genero-male {
   width: 38px;
   background: white;
   padding: 2px;
@@ -257,7 +289,25 @@ input[type=number]::-webkit-outer-spin-button {
   cursor: pointer;
   border: 2px solid #666;
   }
-     
+  .mover-genero{
+  
+    transform: scale(1.5);
+   position: absolute;
+  }
+   .mover-genero-fame{
+    transform: scale(1.5 );
+    position: absolute;
+  }
+  .imagen-genero-fame {
+  width: 38px;
+  background: white;
+  padding: 2px;
+  border-radius: 50%;
+  height: 38px;
+  cursor: pointer;
+  border: 2px solid #666;
+  }   
+
 .checkbox {
     display: grid;
     grid-gap: 10px;
