@@ -51,7 +51,8 @@
 
                                     <div  
                                     @click="eventohombre()"
-                                    class="btn-male " v-bind:class=" bandera ? 'mover-genero' : 'remover' ">
+                                    class="btn-male " 
+                                    v-bind:class=" bandera ? 'mover-genero' : 'remover' ">
                                         <a 
                                             >
                                             <img class="imagen-genero-male" src="../assets/img/men.png">
@@ -59,7 +60,8 @@
                                     </div>
                                     <div 
                                     @click="eventomujer()"
-                                    class="btn-fame" v-bind:class=" banderamujer ? 'mover-genero-fame' : 'remover' ">
+                                    class="btn-fame" 
+                                    v-bind:class=" banderamujer ? 'mover-genero-fame' : 'remover' ">
                                         <a>
                                             <img class="imagen-genero-fame" src="../assets/img/mujer.png">
                                         </a>
@@ -104,8 +106,10 @@
                             
 
                             <p class="botonmain">
-                              <button
-                               >Enviar</button>
+                              <button :disabled="!bandera" 
+                             v-bind:style="[!bandera ? {'background': '#666'} : {'background': '#731b8b'}]"
+                             
+                               >Ingresar</button>
                             </p>
                             </form>
                       </div>

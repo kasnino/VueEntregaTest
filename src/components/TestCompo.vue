@@ -7,8 +7,12 @@
              <div class="checkbox">
           	<span class="pregunta">La Educacion Virtual Permite...</span>
 
-						<input id="checkbox-rema2" type="checkbox" value="4" />
-						<label for="checkbox-rema2">La cultura que esta emergiendo quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						<input 
+						
+						id="checkbox-rema2" type="checkbox" value="4" />
+						<label 
+						
+						for="checkbox-rema2">La cultura que esta emergiendo quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 							<span class="box"></span>
 						</label>
 
@@ -31,8 +35,12 @@
 				  <div class="checkbox">
 							<span class="pregunta">La Educacion Virtual Permite...</span>
 
-							<input id="checkbox-rema" type="checkbox" value="4" />
-							<label for="checkbox-rema">La cultura que esta emergiendo quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							<input 
+							@change="metodocambio()"
+							id="checkbox-rema" type="checkbox" value="4" />
+							<label 
+							v-bind:class="bandera ? 'correcto' : ''"
+							for="checkbox-rema">La cultura que esta emergiendo quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 								<span class="box"></span>
 							</label>
 
@@ -98,15 +106,20 @@
 export default {
 	components: {},
 	data(){
-		return {}
+		return {
+			bandera: false
+		}
 
 	},
 
 	methods: {
 
-		evento(){
-			console.log("cambio el chet!!")
-			return true
+		metodocambio(){
+			if(!this.bandera)
+			{return this.bandera = true}
+			else{
+				return this.bandera = false
+			}
 		}
 	}
 }
@@ -281,6 +294,14 @@ input.button,
 
 }
 
+.correcto {
+	background: #77f7cc8f;
+	height: 100%;
+	width: 95%;
+	border-radius: 30px;
+	padding: 4px;
+
+}
 .grid-columnas {
 	display: grid;
 	grid-template-columns: repeat(1,100%);
