@@ -9,6 +9,8 @@
                    <i class="fas fa-angle-left"></i>
             </div>
              <div id="nav">
+
+              <h1>Vuex :: {{$store.state.estadoMundo}}</h1>
               <router-link to="/"> <span class="navegacion">1</span></router-link> |
               <router-link to="/about"><span class="navegacion">2</span></router-link> |
               <router-link to="/description"><span class="navegacion">3</span></router-link> |
