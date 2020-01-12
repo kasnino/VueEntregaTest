@@ -114,6 +114,7 @@ img {
   font: 600 28px/1 "Poppins", sans-serif;
   color: white;
   margin-right: 20px;
+  font-size: 18px;
 }
 
 .logogrid {

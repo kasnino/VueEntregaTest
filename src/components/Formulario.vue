@@ -104,15 +104,17 @@
                                     </label>
                                 </div>
                             
-
-                            <p class="botonmain">
-                              <button :disabled="!bandera" 
-                             v-bind:style="[!bandera ? {'background': '#666'} : {'background': '#731b8b'}]"
-                             
-                               >Ingresar</button>
-                            </p>
+                           <router-link to="/about">
+                                <p class="botonmain">
+                                  <button :disabled="!bandera" 
+                                v-bind:style="[!bandera ? {'background': '#666'} : {'background': '#731b8b'}]"
+                                
+                                  >Ingresar</button>
+                                </p>
+                             </router-link>
                             </form>
                       </div>
+                     
 </template>
 
 
